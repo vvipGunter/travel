@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>我的相册</title>
+    <style type="text/css">
+    body{
+   border:0;
+   padding:0;
+   margin:0;
+ text-align:center;
+   }
+   #divflash
+   {
+     margin:0 auto;
+   }
+   #footer
+{
+ width:1004px; 
+ height:50px; 
+ background-image:url('Images/footer.jpg');
+ background-repeat:no-repeat; 
+ clear:both;
+ float:none; 
+ }
+    </style>
+    <script type="text/javascript" language="javascript" src="JS/ShowRollPic.js"></script>
+     <script type="text/javascript" language="javascript" src="JS/flash.js">
+     </script>
+</head>
+<body>
+      <button type="button" id="return"  onclick="window.location.href='Home.htm'" style="float:right; margin-right:62px;">返回主页</button>
+      <label style=" font-size:14px; font-weight:bold;">↓我的相册</label>
+      <div id="divflash"></div><br />
+      <input type="button" value="更多" style="width:40px;height:20px;text-align:center;float:right; margin-right:62px;" onclick="javascript:alert('sorry,主人暂时只有一个相册！')"/>
+        <div id="footer"> 
+          <label id="footerlabel">版权所有@copyright by chenwei</label>
+       </div>
+</body>
+</html>

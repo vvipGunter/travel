@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>个人档----我的个人信息</title>
+   <style type="text/css">
+   *
+   {
+    border:0;
+     padding:0;
+      margin:0;
+   }
+   body
+   {  
+       border:0;
+      padding:0;
+      margin:0;
+     background-color:#F2EEC9;
+     color:#993300;
+    text-align:center;
+   }
+#main
+{
+ margin:0 auto;
+}
+    #myinfo  .secondtd
+   {
+      border-bottom:solid 2px green;
+      float:left;
+
+   }
+.two
+{
+  text-align:left;
+  float:left;
+border-bottom:solid 2px green;
+}
+   </style>
+   <script type="text/javascript" language="javascript">
+   
+   function showhide(){
+    var detail=document.getElementById("detail");
+    var mybo=document.getElementById("mybtn");
+    if(detail.style.display=="none"){
+    detail.style.display="block";
+    mybo.style.backgroundImage="url(Images/shang.jpg)";
+    mybo.style.backgroundPosition="right center";
+     mybo.style.backgroundRepeat="no-repeat";
+    }
+    else{
+      detail.style.display="none";
+       mybo.style.backgroundImage="url(Images/xia.jpg)";
+            mybo.style.backgroundPosition="right center";
+            mybo.style.backgroundRepeat="no-repeat";
+    }
+   }
+   </script>
+</head>
+<body>
+       <center>
+       <div id="main">
+     
+    <button type="button" id="return" value="aa"  style="float:right;" onclick="window.location.href='Home.htm'">返回主页</button><br />
+         <h2 style="background-color:Yellow;color:green;">我的个人信息</h2>
+        <table id="myinfo">
+        <tr><td>姓名：</td><td><label class="secondtd">陈炜</label></td></tr>
+        <tr><td>生日：</td><td><label class="secondtd">保密</label></td></tr>
+        <tr><td> 民族：</td><td><label class="secondtd">汉</label></td></tr>
+        <tr><td>生肖:</td><td><label class="secondtd">兔</label></td></tr>
+        <tr><td>出生地点：</td><td><label class="secondtd">湖北黄冈</label></td></tr>
+        </table>
+        <input type="button"  id="mybtn" value="详细信息"  onclick="showhide();"style="width:100px;background-image:url(../Images/Common/xia.jpg); background-position:right center; background-repeat:no-repeat;"/>
+        <div style="display:none;" id="detail">
+        <table id="secondtb">
+        <tr><td>喜爱的运动：</td><td><label class="two">瑜珈</label></td></tr>
+        <tr><td>喜爱的明星：</td><td><label class="two">王菲</label></td></tr>
+        <tr><td>喜欢的娱乐：</td><td><label class="two">旅游</label></td></tr>
+        <tr><td>时常出没的地方：</td><td><label class="two">学校 </label></td></tr>
+        <tr><td>最怕的事情：</td><td><label class="two">与陌生人沟通</label></td></tr>
+        <tr><td>喜爱的饮品：</td><td><label class="two">水</label></td></tr>
+        <tr><td>喜欢的颜色：</td><td><label class="two">绿  淡黄  黑  红</label></td></tr>
+        <tr><td>喜欢的地方：</td><td><label class="two">上海 </label></td></tr>
+        <tr><td>个人愿望：</td><td><label class="two">永远都开心</label></td></tr>
+        <tr><td>喜欢的书：</td><td><label class="two">《呼啸山庄》</label></td></tr>
+        <tr><td>喜爱的动物：</td><td><label class="two">猫</label></td></tr>
+        <tr><td>最喜欢的花：</td><td><label class="two">百合</label></td></tr>
+        </table>
+        </div>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>留言板-----朋友，快来给我留言啦！</title>
+    <style type="text/css">
+    body{
+       border:0;
+       padding:0;
+       margin:0;
+       background-color:#F2EEC9;
+       color:#993300;
+    }
+    #txtcontent
+    {
+        width:400px;
+        height:250px;
+         border:solid 1px green;
+         text-indent:1em;
+    }
+    #btnSend
+    {
+      width:100px;
+      height:20px;
+       color:#993300;
+       margin-left:150px;
+    }
+    #footer
+{
+ width:1004px; 
+ height:50px; 
+ background-image:url('Images/footer.jpg');
+ background-repeat:no-repeat; 
+ clear:both;
+ float:none; 
+ background-position:center;
+ }
+    </style>
+    <link type="text/css"  href="Css/home.css"/>
+</head>
+<body>
+    <button type="button" id="save" value="aa"  style="float:right;" onclick="window.location.href='Home.htm'">返回主页</button><br /><br />
+     <h2 style=" background-color:Green; color:Yellow;">留言板</h2>
+     <div style="border:solid 1px green;">
+      <h4 style="background-color:Yellow;">评论人：hehe</h4>
+      <p>我顶！</p>
+      <span  style="float:right;">评论时间:2009.01.01 &nbsp;IP:127.0.0.*</span>
+     </div>
+       <div style="border:solid 1px green; margin-bottom:5px;">
+      <h4 style="background-color:Yellow;">评论人：hehe</h4>
+      <p>我cai！</p>
+      <span  style="float:right;">评论时间:2009.01.03 &nbsp;IP:127.1.1.*</span>
+     </div>
+    &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 昵称：<input type="text" id="title" /><br />
+     我要留言：
+     <textarea id="txtcontent" cols="" rows=""></textarea><br />
+     <p>验证码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt=""/></p>
+     <input type="button"  id="btnSend" value=" 我要留言" onclick="javascript:alert('您现在还不能发表留言！')"/><br />
+     <div id="footer"></div>
+     
+</body>
+</html>
